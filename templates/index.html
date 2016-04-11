@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+      #map {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 65%;
+        height: 100%;
+      }
+    </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js"></script>
+     <script src="/static/ResoMap.js"></script>
+
+    <title>ResoMap</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><input id="searchBar" value="English"></td>
+            <td><button id="searchSkill">Search</button> </td>
+        </tr>
+        <tr>
+            <td>Name</td><td><input id="Name" value="Name"></td>
+        </tr>
+        <tr>
+            <td>Lat</td><td><input id="Lat" value="40"></td>
+        </tr>
+        <tr>
+            <td>Lng</td><td><input id="Lng" value="0"></td>
+        </tr>
+        <tr>
+            <td>Skills</td><td><input id="skills" value="Chinese|Computer Science"></td>
+        </tr>
+        <tr>
+           <td><button id="save">Save</button> </td>
+        </tr>
+    </table>
+
+
+    <!-- <td><textarea rows="6" cols="40" id="listSkills">Skills</textarea></td> -->
+
+    <div id="map"></div>
+</body>
+</html>
